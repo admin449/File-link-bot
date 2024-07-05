@@ -28,7 +28,7 @@ class Var(object):
     FQDN = str(getenv("FQDN","https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/")) if not ON_HEROKU or getenv("FQDN","https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/") else APP_NAME+".herokuapp.com"
     URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
         "http://{}:{}/".format(FQDN, PORT)
-    DATABASE_URL = str(getenv("DATABASE_URL"))
+    DATABASE_URL = str(getenv("DATABASE_URL","mongodb+srv://chaunisha765:5WzIHZGSTxW63T4n@cluster0.ctmouf7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
     UPDATES_CHANNEL = str(getenv("UPDATES_CHANNEL", None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split()))
     
