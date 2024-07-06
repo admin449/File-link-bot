@@ -17,7 +17,7 @@ class Var(object):
     BIN_CHANNEL = int(getenv("BIN_CHANNEL"," -1002226307271"))
     PORT = int(getenv("PORT", 8080))
     BIND_ADRESS = str(getenv("WEB_SERVER_BIND_ADDRESS", "https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/"))
-    OWNER_ID = int(getenv("OWNER_ID", 6214889840))
+    OWNER_ID = int(getenv("OWNER_ID","7011929837"))
     NO_PORT = bool(getenv("NO_PORT", False))
     APP_NAME = None
     OWNER_USERNAME = str(getenv("OWNER_USERNAME","aryanchy449"))
