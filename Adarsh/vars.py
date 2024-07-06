@@ -7,6 +7,7 @@ load_dotenv()
 
 
 class Var(object):
+    name = str(getenv(name,"Login"))
     API_ID = int(getenv("API_ID","23080322"))
     API_HASH = str(getenv("API_HASH","b3611c291bf82d917637d61e4a136535"))
     BOT_TOKEN = str(getenv("BOT_TOKEN","7494418251:AAEoKXkpfO1xEeDbbGW2jjy33MVfjBK1RiY"))
